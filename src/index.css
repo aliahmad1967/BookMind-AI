@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-cairo: "Cairo", "Inter", sans-serif;
+
+  --color-brand-green: #0c322c;
+  --color-brand-green-light: #16483e;
+  --color-brand-green-dark: #07221e;
+  --color-brand-gold: #c68a35;
+  --color-brand-gold-hover: #b27a2b;
+  --color-brand-gold-light: #f6e6cf;
+  --color-brand-cream: #faf7ed;
+  --color-brand-cream-light: #fefdfb;
+  --color-brand-cream-border: #e6dfcc;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* Smooth Fade and Grid Transitions */
+.transition-all-300 {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom animation for pulsating status */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

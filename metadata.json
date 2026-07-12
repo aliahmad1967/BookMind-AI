@@ -1,0 +1,6 @@
+{
+  "name": "BookMind AI",
+  "description": "BookMind AI is an enterprise-grade AI Knowledge Management Platform supporting bilingual Arabic/English libraries, automated OCR, metadata extraction, semantic chunking, and intelligent vector-grounded chat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
